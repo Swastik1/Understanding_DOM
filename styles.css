@@ -1,32 +1,56 @@
-.container{
-    text-align: center;
-    background-color: aqua;
-    border-radius: 0.5rem;
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-p{
-    margin-left: 40px;
-    text-align: center;
+.container {
+  width: 100%;
+  text-align: center;
+  background-color: aqua;
+  border-radius: 0.5rem;
 }
 
+li,
+button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 1.1px;
+  transition: 120ms linear background-color;
+}
+
+.highlight {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .highlight li {
-    margin: 1rem;
-    border: 2px solid black;
-    padding: 1rem;
-    display: inline-block;
-    background-color: rgb(127, 127, 193);
-    color: white;
-    border-radius: 0.5rem;
-    
-} 
+  margin: 1rem 2rem;
+  border: 2px solid black;
+  padding: 0.5rem 2rem;
+  background-color: rgba(127, 127, 193, 0.8);
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.highlight li:hover {
+  background-color: rgb(127, 127, 193);
+}
 
 #remove-btn {
-    margin: 1rem;
-    border: 2px solid black;
-    padding: 10px;
-    background-color: rgb(197, 197, 203);
-    color: rgb(254, 13, 13);
-    border-radius: 0.5rem;
-    cursor: pointer;
+  margin: 1rem;
+  border: 2px solid rgb(254, 13, 13);
+  padding: 0.5rem 2rem;
+  background-color: rgba(254, 13, 13, 0.8);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#remove-btn:hover {
+  background-color: rgb(254, 13, 13);
 }
